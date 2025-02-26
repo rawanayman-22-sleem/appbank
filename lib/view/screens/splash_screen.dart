@@ -1,7 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import '../constants/assets.dart';
 import '../constants/color.dart';
 import 'login_screen.dart';
 class SplashScreen extends StatelessWidget {
@@ -20,7 +19,7 @@ class SplashScreen extends StatelessWidget {
         backgroundColor: white,
         centered: true,
         splashTransition: SplashTransition.fadeTransition,
-        splash: Image.asset(Splash),
+        splash: Image.asset('assets/images/splash.png'),
         nextScreen: LoginScreen(),
       ),
     );

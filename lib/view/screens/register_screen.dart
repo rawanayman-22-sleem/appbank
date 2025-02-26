@@ -42,7 +42,7 @@ class RegisterScreen extends StatelessWidget{
                     Text(
                       'REGESTER',
                       style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                        fontWeight: FontWeight.bold, // Makes the text bold
+                        fontWeight: FontWeight.bold,
                         color: rmaincolor,
                         fontSize: 50,// Change to your desired color
                       ),

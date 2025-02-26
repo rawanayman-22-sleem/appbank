@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../components/customAppbar.dart';
+import '../constants/color.dart';
 import 'details_screen.dart';
 
 class MyAccounts extends StatelessWidget {
@@ -12,6 +13,7 @@ class MyAccounts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: rbackgroundcolor,
       appBar: const CustomAppBar(title: "My Accounts" ),
       body: Column(
         children: [
@@ -31,47 +33,6 @@ class MyAccounts extends StatelessWidget {
     );
   }
 }
-
-//     Scaffold(
-//       appBar: const CustomAppBar(title: "My Accounts" ),
-//       body: Column(
-//         children: [
-//           Container(
-//             width: double.infinity,
-//             margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-//             child: InkWell(
-//               onTap: (){
-//                 Navigator.push(context, CupertinoPageRoute(builder: (context) => const Detailsscreen( )),);
-//               },
-//               child: Card(
-//                 elevation: 10,
-//                 shape: RoundedRectangleBorder(
-//                   borderRadius: BorderRadius.circular(12),
-//                 ),
-//                 child: Padding(
-//                   padding: const EdgeInsets.all(20),
-//                   child: Column(
-//                     crossAxisAlignment: CrossAxisAlignment.start,
-//                     children: [
-//                       const Text(
-//                         "Banque Misr",
-//                         style: TextStyle(
-//                           fontSize: 22,
-//                           fontWeight: FontWeight.bold,
-//                         ),
-//                       ),
-//                     ],
-//                   ),
-//                 ),
-//               ),
-//             ),
-//           ),
-//         ],
-//       ),
-//
-//     );
-//   }
-// }
 
 class CustomBankCard extends StatelessWidget {
   const CustomBankCard({
@@ -94,7 +55,7 @@ class CustomBankCard extends StatelessWidget {
           },
           borderRadius: BorderRadius.circular(12),
           child: Card(
-            elevation: 10, // الظل لإبراز الكارد
+            elevation: 10,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),

@@ -33,16 +33,15 @@ class LoginScreen extends StatelessWidget {
                     child: Image.asset('assets/images/bank_12202822.png' ,
                       height: 100,
                       color: rmaincolor,
-
                     ),
                   ),
                   SizedBox(height: 40,),
                   Text(
                     'LOGIN',
                     style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                      fontWeight: FontWeight.bold, // Makes the text bold
+                      fontWeight: FontWeight.bold,
                       color: rmaincolor,
-                      fontSize: 60,// Change to your desired color
+                      fontSize: 60,
                     ),
                   ),
                   SizedBox(height: 30),

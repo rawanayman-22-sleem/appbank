@@ -83,8 +83,8 @@ class AccountDetailsScreen extends StatelessWidget {
                       ),
                     ),
                   ],
-                  centerSpaceRadius: 50, // توسيع الدائرة الداخلية
-                  sectionsSpace: 3, // تباعد بين الأقسام
+                  centerSpaceRadius: 50,
+                  sectionsSpace: 3,
                 ),
               ),
             ),

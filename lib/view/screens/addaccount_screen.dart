@@ -105,7 +105,6 @@ class _AddAccountState extends State<AddAccount> {
                           labelText: "Enter the amount",
                           hintText: "0.00",
                           prefixIconColor: rmaincolor,
-
                           keyboardType: TextInputType.number,
                           prefixIcon: Icons.attach_money,
                           controller: amountController,
@@ -164,10 +163,7 @@ class _AddAccountState extends State<AddAccount> {
                     child: CustomButton(
                       onTap: () {
                         if (_formKey.currentState!.validate()) {
-                          // ScaffoldMessenger.of(context).showSnackBar(
-                          //   const SnackBar(content: Text("Added successfully")),
-                          //
-                          // );
+
                           widget.changeTab(0);
                         }
                       },
@@ -175,10 +171,8 @@ class _AddAccountState extends State<AddAccount> {
                     ),
                   ),
                   Center(
-
                       child: Image.asset('assets/images/Na_Nov_15.jpg' ,
                         height: 250,
-                       //color: rmaincolor,
                       ),
                     ),
                 ],
